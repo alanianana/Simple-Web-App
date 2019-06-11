@@ -5,3 +5,4 @@ if(isset($_GET['id'])) {
     deleteUser($userid);
     header('Location: ./views/ad.php');
 }
+//წერქწერქერტ
