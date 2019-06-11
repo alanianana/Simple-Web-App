@@ -3,17 +3,17 @@ include_once '../partials/header.php';
 ?>
 
 <div class="container">
-    <h1>შესვლა</h1>
-    <form method="post" action="profile.php" >
+    <h1>Log In</h1>
+    <form method="post" action="../login_code.php" >
         <div>
-            <label>ელ.ფოსტა:</label>
-            <input type="text" class="form-control" name="email" placeholder="შეიყვანეთ ელ.ფოსტა">
+            <input type="text" class="form-control" name="email" placeholder="Email">
         </div>
+        <br>
         <div>
-            <label>პაროლი:</label>
-            <input type="password" class="form-control" name="email" placeholder="შეიყვანეთ პაროლი">
+            <input type="password" class="form-control" name="password" placeholder="password">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        <button type="submit" name="login" class="btn btn-primary">Log In</button>
     </form>
 </div>
 

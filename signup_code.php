@@ -3,12 +3,14 @@ include_once './DB/database.php';
 
 if(isset($_POST['signup_btn'])){
     function addNewUser(){
-     $username = $_POST['username'];
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
      $email = $_POST['email'];
-     $password = $_POST['password'];
+     $password =md5( $_POST['password']);
 
      newUser([
-        'username'=>$username,
+         'name'=> $name,
+        'surname'=>$surname,
         'email' => $email,
          'password' => $password,
      ]);
